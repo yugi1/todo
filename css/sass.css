@@ -1,3 +1,17 @@
-
+body {
+  background-color: #bed9b2;
+}
+body .outer {
+  background-color: #779469;
+  color: white;
+}
+body .outer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+body .outer h1 {
+  font-family: "Gochi Hand", cursive;
+}
 
 /*# sourceMappingURL=sass.css.map */

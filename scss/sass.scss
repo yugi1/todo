@@ -1,0 +1,19 @@
+$fonth: 'Comfortaa', cursive;
+$fontl: 'Gochi Hand', cursive;
+$fontp: 'Quicksand', sans-serif;
+
+body {
+    background-color: #bed9b2;
+    .outer {
+        background-color: #779469;
+        color: white;
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        h1 {
+            font-family: $fontl;
+        }
+    }
+}
