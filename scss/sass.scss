@@ -6,11 +6,20 @@ body {
     background-color: #283d1d;
     margin: 15px;
     padding: 0;
-    form input {
-        width: 304px;
+    form {
+       display: flex; 
+       flex-direction: row;
+       .inputf{
+           display: flex;
+           flex: 1;
+           .namel {
+            width: -webkit-fill-available;
+           }
+       }
     }
     .col-8 {
         background-color: white;
+   
     }
     .outer {
         background-color: #bed9b2;

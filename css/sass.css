@@ -3,8 +3,16 @@ body {
   margin: 15px;
   padding: 0;
 }
-body form input {
-  width: 304px;
+body form {
+  display: flex;
+  flex-direction: row;
+}
+body form .inputf {
+  display: flex;
+  flex: 1;
+}
+body form .inputf .namel {
+  width: -webkit-fill-available;
 }
 body .col-8 {
   background-color: white;
