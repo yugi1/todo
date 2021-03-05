@@ -1,16 +1,16 @@
 body {
   background-color: #bed9b2;
 }
-body .outer {
+body .navbar {
   background-color: #779469;
   color: white;
 }
-body .outer ul {
+body .navbar ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
-body .outer h1 {
+body .navbar h1 {
   font-family: "Gochi Hand", cursive;
 }
 
