@@ -1,5 +1,5 @@
 body {
-  background-color: #283d1d;
+  background-color: white;
   margin: 15px;
   padding: 0;
 }
@@ -31,6 +31,18 @@ body .navbar ul {
 }
 body .navbar h1 {
   font-family: "Gochi Hand", cursive;
+}
+
+.chat-window {
+  border: 1px solid rgba(128, 128, 128, 0.479);
+}
+
+.message {
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  border-radius: 0.5px;
+  margin: 3px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=sass.css.map */

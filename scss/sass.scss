@@ -1,9 +1,9 @@
 $fonth: 'Comfortaa', cursive;
 $fontl: 'Gochi Hand', cursive;
 $fontp: 'Quicksand', sans-serif;
-
+//#283d1d - bg color
 body {
-    background-color: #283d1d;
+    background-color: white;
     margin: 15px;
     padding: 0;
     form {
@@ -36,4 +36,16 @@ body {
             font-family: $fontl;
         }
     }
+}
+
+.chat-window {
+    border: 1px solid rgba(128, 128, 128, 0.479);
+}
+
+.message {
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    border-radius: .5px;
+    margin: 3px;
+    padding: 5px;
+    cursor: pointer;
 }
