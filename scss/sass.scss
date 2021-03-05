@@ -3,7 +3,18 @@ $fontl: 'Gochi Hand', cursive;
 $fontp: 'Quicksand', sans-serif;
 
 body {
-    background-color: #bed9b2;
+    background-color: #283d1d;
+    margin: 15px;
+    padding: 0;
+    form input {
+        width: 304px;
+    }
+    .col-8 {
+        background-color: white;
+    }
+    .outer {
+        background-color: #bed9b2;
+    }
     .navbar {
         background-color: #779469;
         color: white;

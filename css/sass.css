@@ -1,4 +1,15 @@
 body {
+  background-color: #283d1d;
+  margin: 15px;
+  padding: 0;
+}
+body form input {
+  width: 304px;
+}
+body .col-8 {
+  background-color: white;
+}
+body .outer {
   background-color: #bed9b2;
 }
 body .navbar {
