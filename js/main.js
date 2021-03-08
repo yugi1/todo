@@ -2,12 +2,6 @@ const chats = retrieveChats() || {};
 const users = retrieveUsers();
 let currentChat = retrieveCurrentChat();
 
-// dummy users
-if (!users.length) {
-  const user1 = new User('barnaby-1205');
-  const user2 = new User('fresh4days');
-  users.push(user1, user2);
-}
 
 document
   .getElementById('new-chat-button')
@@ -95,25 +89,25 @@ function retrieveCurrentChat() {
 }
 
 function createChat(chat) {
-  // take care of messages
+ 
   const messages = chat.messages.map(
     (message) =>
       new Message(message.text, message.id, message.username, message.liked)
   );
-  // return new instance of class
+ 
   return new Chat(chat.name, chat.id, messages);
 }
 
 function addNewChat() {
   const chatName = document.getElementById('new-chat-input').value;
   if (chatName) {
-    // create the chat
+ 
     const newChat = new Chat(chatName);
-    // add chat to chats
+    
     chats[newChat.id] = newChat;
-    // clear out the input box
+    
     document.getElementById('new-chat-input').value = '';
-    //print again
+   
     print();
     save();
   }
@@ -136,6 +130,6 @@ function likeMessage(messageId) {
 
 function selectCurrentChat(chatId) {
   currentChat = chats[chatId];
-  // print again
+  
   print();
 }
