@@ -1,38 +1,3 @@
-body {
-  background-color: white;
-  margin: 15px;
-  padding: 0;
-}
-body form {
-  display: flex;
-  flex-direction: row;
-}
-body form .inputf {
-  display: flex;
-  flex: 1;
-}
-body form .inputf .namel {
-  width: -webkit-fill-available;
-}
-body .col-8 {
-  background-color: white;
-}
-body .outer {
-  background-color: #bed9b2;
-}
-body .navbar {
-  background-color: #779469;
-  color: white;
-}
-body .navbar ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-body .navbar h1 {
-  font-family: "Gochi Hand", cursive;
-}
-
 .chat-window {
   border: 1px solid rgba(128, 128, 128, 0.479);
 }
