@@ -1,58 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://kit.fontawesome.com/9544e296e7.js" crossorigin="anonymous"></script>
+        <title>Turtle Do</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="css/sass.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Gochi+Hand&family=Quicksand&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/9544e296e7.js" crossorigin="anonymous"></script>
-        <title>To Do</title>
         <meta charset="UTF-8">
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Chat</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
     
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
+    <body>
+        <div class="nav">
+            <h1>Turtle Do</h1>
+            <div class="icons">
+                <ul>
+                    <li><i class="fas fa-user-circle"></i></li>
+                    <li><i class="fas fa-cog"></i></li>
                 </ul>
             </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-3">
-                    <div>
-                        <h2>Chats</h2>
-                    </div>
-                    <div>
-                        <label for="new-chat-input">New Chat</label>
-                        <input id="new-chat-input">
-                        <button id="new-chat-button" class="btn btn-primary">Add Chat</button>
-                    </div>
-                    <di>
-                        <ul id="chats" class="list-group">
-                        </ul>
-                    </di>
-                </div>
-                <div class="col-9">
-                    <div>
-                        <h2 id="current-chat-name">Current Chat</h2>
-                    </div>
-                    <div id="chat-window" class="chat-window">
-                    </div>
-                    <div id="users">
-                    </div>
+        </div>
+
+        <div class="lists">
+            <div class="input">
+                <input type="text" id="lName"  placeholder="New List...">
+                <div class="button">
+                    <input type="button" onclick="addList()" value="Add">
                 </div>
             </div>
         </div>
-           
+
+        <div class="listoflist">
+            <ul id="lol"></ul>
+        </div>
+
+          <script src="js/main.js"></script>
+          
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     </body>
 </html>
