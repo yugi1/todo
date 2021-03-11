@@ -4,26 +4,41 @@
 }
 .nav h1 {
   padding: 16px 0px 10px 35px;
+  font-family: "Gochi Hand", cursive;
+  font-size: 50px;
+}
+.nav h1:hover {
+  color: #34472a;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.lists, .listoflist {
-  background-color: #bed9b2;
+.listoflist {
+  background-color: #f1ffeb;
+  width: 300px;
 }
 
 .lists {
-  padding: 20px 0px 0px 20px;
+  padding: 20px 0px 10px 15px;
+  background-color: #bed9b2;
 }
 .lists .input {
   display: flex;
   flex-grow: inherit;
 }
+.lists .input #lName {
+  padding: 5px;
+}
 
 #lol li {
-  color: red;
+  color: #34472a;
+  font-size: 18px;
+  padding: 10px 0px 10px 15px;
 }
 
 ul, li {
   list-style-type: none;
+  padding: 0;
 }
 
 .nav {
@@ -42,6 +57,16 @@ ul, li {
 .nav .links li i:hover {
   color: #34472a;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+#lol li:nth-child(odd) {
+  background: #daf7cd;
+}
+
+#button {
+  width: 80px;
+  height: 38px;
 }
 
 /*# sourceMappingURL=sass.css.map */
