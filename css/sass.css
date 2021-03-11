@@ -13,9 +13,9 @@
   transition: 0.3s;
 }
 
-.listoflist {
+.listoflist li {
   background-color: #f1ffeb;
-  width: 300px;
+  width: 320px;
 }
 
 .lists {
@@ -88,6 +88,22 @@ ul, li {
 
 .button {
   padding-left: 5px;
+}
+
+.contain {
+  display: flex;
+}
+
+#currentWindow {
+  margin-left: 350px;
+  padding-top: 40px;
+  position: absolute;
+}
+
+h2 {
+  font-family: "Coustard", serif;
+  font-size: 30px;
+  color: #638751;
 }
 
 /*# sourceMappingURL=sass.css.map */

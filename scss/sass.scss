@@ -16,9 +16,9 @@ $fonts: 'Montserrat', sans-serif;
         transition: .3s;
     }
 }
-.listoflist {
+.listoflist li {
     background-color: #f1ffeb;
-       width: 300px;
+       width: 320px;
 }
 .lists {
     padding: 20px 0px 10px 15px;
@@ -83,3 +83,18 @@ ul, li {
 .button {
     padding-left: 5px;
 }
+.contain {
+    display: flex;
+
+}
+#currentWindow {
+    margin-left: 350px;
+    padding-top: 40px;
+    position: absolute;
+}
+h2 {
+    font-family: $fontb;
+    font-size: 30px;
+    color: #638751;
+}
+

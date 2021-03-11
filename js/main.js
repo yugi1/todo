@@ -6,11 +6,23 @@ function addList() {
   adding.innerHTML = `${input}`;
   whereadd.appendChild(adding);
 }
+
+//make current window an onclick action with the add button
+function togglecurrent() {
+  let header = document.getElementsById("currentWindow");
+  if (header.style.display === "none") {
+    header.style.display= "block";
+  } else {
+    header.style.display = "none";
+  }
+}
 //function edit() {
  // let editbtn = document.createElement("BUTTON");   // Create a <button> element
 //editbtn.innerHTML = "CLICK ME";                   // Insert text
 // document.body.appendChild(editbtn); 
-//}
+//} 
+
+//adding the delete button
 let closing = document.getElementsById("lol");
 let closingt = closing.document.getElementByTagName("LI");
 let i;
