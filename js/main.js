@@ -11,11 +11,12 @@ function addList() {
 //editbtn.innerHTML = "CLICK ME";                   // Insert text
 // document.body.appendChild(editbtn); 
 //}
-let closing = document.getElementsByTagName("LI");
+let closing = document.getElementsById("lol");
+let closingt = closing.document.getElementByTagName("LI");
 let i;
 for (i = 0; i < closing.length; i++) {
   let span = document.createElement("SPAN");
-  let txt = document.createTextNode("\u00D7");
+  let txt = document.createTextNode("test");
   span.className = "close";
   span.appendChild(txt);
 closing[i].appendChild(span);
