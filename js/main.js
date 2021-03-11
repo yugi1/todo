@@ -1,10 +1,10 @@
 
-
+  let whereadd = document.getElementById("lol");
 function addList() {
   let input = document.getElementById('lName').value;
   let adding = document.createElement("LI");
   adding.innerHTML = `${input}`;
-  document.body.appendChild(adding);
+  whereadd.appendChild(adding);
 }
 //function edit() {
  // let editbtn = document.createElement("BUTTON");   // Create a <button> element

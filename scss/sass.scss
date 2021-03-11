@@ -1,10 +1,40 @@
 .nav {
     background-color: #779469;
     color: white;  
+    h1 {
+        padding: 16px 0px 10px 35px;
+    }
 }
 .lists, .listoflist {
     background-color: #bed9b2;
 }
+.lists {
+    padding: 20px 0px 0px 20px;
+    .input {
+        display: flex;
+        flex-grow: inherit;
+    }
+}
+#lol li {
+    color: red;
+}
 ul, li {
    list-style-type: none;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    .links {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 40px 10px 0px;
+        li {
+            padding: 15px;
+            font-size: 20px;
+                i:hover {
+                    color: #34472a;
+                    transition: .3s;
+            }
+        }
+    }
 }
