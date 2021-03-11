@@ -26,7 +26,7 @@ $fonts: 'Montserrat', sans-serif;
     .input {
         display: flex;
         flex-grow: inherit;
-
+        font-family: $fonts;
         #lName {
             padding: 5px;
         }
@@ -35,7 +35,14 @@ $fonts: 'Montserrat', sans-serif;
 #lol li {
     color: #34472a;
     font-size: 18px;
-    padding: 10px 0px 10px 15px;
+    padding: 10px 10px 10px 15px;
+    font-family: $fonts;
+}
+#lol li:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #679650;
+    transition: .4s;
 }
 ul, li {
    list-style-type: none;
@@ -62,7 +69,17 @@ ul, li {
 #lol li:nth-child(odd) {
     background: #daf7cd;
   }
+  #lol li:nth-child(odd):hover {
+      background-color: #679650;
+      transition: .4s;
+  }
 #button {
     width: 80px;
     height: 38px;
+    color: white;
+    background-color: #638751;
+    font-family: $fonts;
+}
+.button {
+    padding-left: 5px;
 }

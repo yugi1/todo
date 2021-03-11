@@ -25,6 +25,7 @@
 .lists .input {
   display: flex;
   flex-grow: inherit;
+  font-family: "Montserrat", sans-serif;
 }
 .lists .input #lName {
   padding: 5px;
@@ -33,7 +34,15 @@
 #lol li {
   color: #34472a;
   font-size: 18px;
-  padding: 10px 0px 10px 15px;
+  padding: 10px 10px 10px 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#lol li:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #679650;
+  transition: 0.4s;
 }
 
 ul, li {
@@ -64,9 +73,21 @@ ul, li {
   background: #daf7cd;
 }
 
+#lol li:nth-child(odd):hover {
+  background-color: #679650;
+  transition: 0.4s;
+}
+
 #button {
   width: 80px;
   height: 38px;
+  color: white;
+  background-color: #638751;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  padding-left: 5px;
 }
 
 /*# sourceMappingURL=sass.css.map */
