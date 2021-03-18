@@ -7,26 +7,12 @@ function addList() {
   whereadd.appendChild(adding);
 }
 
-//switching between lists - starting w creating a textbox in each one
 
-function addTabLink() {
-  let tabs = whereadd.document.getElementByTagName("LI"); //the list items selected
-  let textBox = document.createElement("INPUT"); //creating input box
-  let inputElement = textBox.setAttribute("type", "text"); //setting attribute to input box
-  tabs.appendChild(inputElement);
-
-}
 
 //make current window header an onclick action with the add button
-//function togglecurrent() {
-  //let header = document.getElementsById("currentWindow");
-  //if (header.style.display === "none") {
-  //  header.style.display= "block";
-  //} else {
-   // header.style.display = "none";
- // }
-//}
-
+function toggleWindow() {
+  document.getElementById("currentWindow").style.display = 'hidden';
+}
 //function edit() {
  // let editbtn = document.createElement("BUTTON");   // Create a <button> element
 //editbtn.innerHTML = "CLICK ME";                   // Insert text
