@@ -7,12 +7,10 @@ function addList() {
   whereadd.appendChild(adding);
 }
 
-
-
-//make current window header an onclick action with the add button
 function toggleWindow() {
-  document.getElementById("currentWindow").style.display = 'hidden';
+  document.getElementById("headerh").style.display = 'block';
 }
+
 //function edit() {
  // let editbtn = document.createElement("BUTTON");   // Create a <button> element
 //editbtn.innerHTML = "CLICK ME";                   // Insert text
