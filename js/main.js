@@ -11,11 +11,12 @@ function toggleWindow() {
   document.getElementById("headerh").style.display = 'block';
 }
 
-//function edit() {
- // let editbtn = document.createElement("BUTTON");   // Create a <button> element
-//editbtn.innerHTML = "CLICK ME";                   // Insert text
-// document.body.appendChild(editbtn); 
-//} 
+//putting todo content on seperate lists
+selector = document.getElementById("lol").addEventListener("click", todos);
+
+function todos() {
+  document.getElementById("tabContent").innerHTML = "<input type='text' id='todoAdd' placeholder='To Do...'><input type='submit' id='todoB' value='Add To Do'>";
+} 
 
 //adding the delete button
 //let closing = document.getElementsById("lol");

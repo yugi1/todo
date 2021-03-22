@@ -2,6 +2,21 @@
   display: none;
 }
 
+#todoAdd {
+  width: 500px;
+  padding: 8px;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 10px;
+}
+
+#todoB {
+  width: 110px;
+  padding: 8px;
+  background-color: #638751;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
 .nav {
   background-color: #779469;
   color: white;

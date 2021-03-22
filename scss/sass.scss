@@ -4,6 +4,19 @@ $fonts: 'Montserrat', sans-serif;
 #headerh {
     display: none;
 }
+#todoAdd {
+    width: 500px;
+    padding: 8px;
+    font-family: $fonts;
+    margin-right: 10px;
+}
+#todoB {
+    width: 110px;
+    padding: 8px;
+    background-color: #638751;
+    color: white;
+    font-family: $fonts;
+}
 .nav {
     background-color: #779469;
     color: white;  
