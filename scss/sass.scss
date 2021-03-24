@@ -4,6 +4,12 @@ $fonts: 'Montserrat', sans-serif;
 #headerh {
     display: none;
 }
+#tabContent, #tabContent2 {
+    margin-left: 75px;
+}
+#todoAdd {
+    margin-bottom: 20px;
+}
 #todoAdd {
     width: 500px;
     padding: 8px;
@@ -36,6 +42,10 @@ $fonts: 'Montserrat', sans-serif;
     background-color: #f1ffeb;
        width: 320px;
 }
+#tabContent2 li {
+    background-color: #f1ffeb;
+    width: 618px; 
+}
 .lists {
     padding: 20px 0px 10px 15px;
     background-color: #bed9b2;
@@ -48,13 +58,14 @@ $fonts: 'Montserrat', sans-serif;
         }
     }
 }
-#lol li {
+
+#lol li, #tabContent2 li {
     color: #34472a;
     font-size: 18px;
     padding: 10px 10px 10px 15px;
     font-family: $fonts;
 }
-#lol li:hover {
+#lol li:hover, #tabContent2 li:hover {
     color: white;
     cursor: pointer;
     background-color: #679650;
@@ -82,10 +93,10 @@ ul, li {
         }
     }
 }
-#lol li:nth-child(odd) {
+#lol li:nth-child(odd), #tabContent2 li:nth-child(odd) {
     background: #daf7cd;
   }
-  #lol li:nth-child(odd):hover {
+  #lol li:nth-child(odd):hover, #tabContent2 li:nth-child(odd):hover {
       background-color: #679650;
       transition: .4s;
   }
