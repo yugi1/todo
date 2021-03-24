@@ -12,11 +12,25 @@ function toggleWindow() {
 }
 
 //putting todo content on seperate lists
-selector = document.getElementById("lol").addEventListener("click", todos);
+
+document.getElementById("lol").addEventListener("click", todos);
+
+
+let whereadd2 = document.getElementById('tabContent2');
+function todoList() {
+  let value = document.getElementById('todoAdd').value;
+let adding2 = document.createElement("LI");
+adding2.innerText = `${value}`;
+whereadd2.appendChild(adding2);
+}
 
 function todos() {
-  document.getElementById("tabContent").innerHTML = "<input type='text' id='todoAdd' placeholder='To Do...'><input type='submit' id='todoB' value='Add To Do'>";
+  document.getElementById("tabContent").innerHTML = "<input type='text' id='todoAdd' placeholder='To Do...'><input type='submit' id='todoB' value='Add To Do' onclick='todoList()'>";
 } 
+
+
+
+
 
 //adding the delete button
 //let closing = document.getElementsById("lol");
