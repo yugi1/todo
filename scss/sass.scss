@@ -4,6 +4,35 @@ $fonts: 'Montserrat', sans-serif;
 #headerh {
     display: none;
 }
+#checkB {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+   margin-left: 500px;
+   
+}
+.closeB {
+    margin-left: 10px;
+    padding: 5px 7px 5px 7px;
+}
+.closeB2 {
+    margin-left: 10px;
+    padding: 5px 7px 5px 7px;
+}
+.editB2 {
+    font-size: 13px;
+    margin-left: 460px;
+}
+.editB {
+    font-size: 13px;
+    margin-left: 180px;
+}
+.editB:hover, .editB2:hover {
+    color: rgb(10, 61, 10);
+}
+.closeB:hover, .closeB2:hover {
+    background-color: darkgreen;
+}
 #tabContent, #tabContent2 {
     margin-left: 75px;
 }
