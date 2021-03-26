@@ -9,7 +9,6 @@ function addList() {
   document.getElementById('clickMe').addEventListener("click", todos);
 
   let closeBtn = document.getElementsByClassName(`closeB`);
-//make close button work
 for (let i = 0; i < closeBtn.length; i++) {
   closeBtn[i].onclick = function() {
     let parent = this.parentElement;
@@ -31,6 +30,14 @@ let adding2 = document.createElement("LI");
 adding2.setAttribute("id", "clickMe2");
 adding2.innerHTML = `${value}` + "<input type='checkbox' id='checkB'>" + "<span class='editB2'>Edit</span>" + "<span class='closeB2'>\u00D7</span>";
 whereadd2.appendChild(adding2);
+
+let closeBtn2 = document.getElementsByClassName(`closeB2`);
+for (let i = 0; i < closeBtn2.length; i++) {
+  closeBtn2[i].onclick = function() {
+    let parent = this.parentElement;
+    parent.style.display = "none";
+  }
+}
 }
 
 function todos() {
