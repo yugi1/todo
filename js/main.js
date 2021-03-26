@@ -4,20 +4,11 @@ function addList() {
   let input = document.getElementById('lName').value;
  let adding = document.createElement("LI"); 
  adding.setAttribute("id", "clickMe");
-  adding.innerHTML = `${input}<span class='editB'>Edit</span><span class='closeB'>\u00D7</span>`;
+  adding.innerHTML = `${input}`;
   whereadd.appendChild(adding);
   document.getElementById('clickMe').addEventListener("click", todos);
 
-  let closeBtn = document.getElementsByClassName(`closeB`);
-for (let i = 0; i < closeBtn.length; i++) {
-  closeBtn[i].onclick = function() {
-    let parent = this.parentElement;
-    parent.style.display = "none";
-  }
 }
-
-}
-
 
 function toggleWindow() {
   document.getElementById("headerh").style.display = 'block';
@@ -44,3 +35,12 @@ function todos() {
   document.getElementById("tabContent").innerHTML = "<input type='text' id='todoAdd' placeholder='To Do...'><input type='submit' id='todoB' value='Add To Do' onclick='todoList()'>";
 } 
 
+//edit btn (once coded place in correct function) also this is JUST for todos NOT THE LISTS!!!
+let editBtn = document.getElementById('editB2');
+for (let i = 0; i < editBtn.length; i++) {
+  editBtn[i].onclick = function () {
+    let newInput = document.getElementById('clickMe');
+    newInput.innerHTML = "<input type='text' id='editBox'> <input type='submit' id='newSub'>";
+    
+  }
+}

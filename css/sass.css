@@ -9,11 +9,6 @@
   margin-left: 500px;
 }
 
-.closeB {
-  margin-left: 10px;
-  padding: 5px 7px 5px 7px;
-}
-
 .closeB2 {
   margin-left: 10px;
   padding: 5px 7px 5px 7px;
@@ -24,16 +19,11 @@
   margin-left: 460px;
 }
 
-.editB {
-  font-size: 13px;
-  margin-left: 180px;
-}
-
-.editB:hover, .editB2:hover {
+.editB2:hover {
   color: #0a3d0a;
 }
 
-.closeB:hover, .closeB2:hover {
+.closeB2:hover {
   background-color: darkgreen;
 }
 
