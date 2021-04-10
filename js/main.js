@@ -30,14 +30,21 @@ for (let i = 0; i < closeBtn2.length; i++) {
   }
 }
 
-//place code here
+//
 let editBtn = document.getElementsByClassName('editB2');
 for (let i = 0; i < editBtn.length; i++) {
   editBtn[i].onclick = function () {
     let newInput = document.getElementById('clickMe2');
     newInput.innerHTML = "<input type='text' id='editBox'>" + "<button id='newSub'>Add</button>";
    editBtn.appendChild('newInput');
-    let replacement = document.getElementById('editBox').value;
+
+    
+    let select = document.getElementById('newSub');
+    select.onclick = function () {
+      let replacement = document.getElementById('editBox').value;
+      newInput.innerHTML = `${replacement}`;
+      `${whereadd2}`.appendChild('newInput');
+    }
   }
 }
 }
